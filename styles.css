@@ -148,7 +148,7 @@
 .main__container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
@@ -162,7 +162,7 @@
     display: inline-block;
     letter-spacing: 0.1em;
 
-    padding-top: -500px;
+    padding-top: 100px;
     width: 0;
     overflow: hidden;
     white-space: nowrap;
