@@ -15,6 +15,7 @@
     font-size: 1.2rem;
     top: 0;
     z-index: 999;
+    position: sticky;
 }
 
 .navbar__container {
