@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+        <title>Toba Odumosu</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    </head>
+
+    <body>
+        <nav class="navbar">
+            <div class="navbar__container">
+                <a href="#home" id="navbar__logo">toba odumosu</a>
+                <div class="navbar__toggle" id="mobile-menu">
+                    <span class="bar"></span><span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="navbar__menu">
+                    <li class="navbar__item">
+                        <a href="#home" class="navbar__links" id="home-page">home</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#type3" class="navbar__links" id="portfolio">portfolio</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#services" class="navbar__links" id="services">services</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </nav>
+    <section>
+        <div class="main" id="home">
+            <div class="main__container">
+                <div class="type1">
+                    <p>welcome to my portfolio</p>
+                </div>
+                <div class="type2">
+                    <p>scroll down for my projects</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="portfolio" id="portfolio">
+            <div class="portfolio_container">
+                <div class="type3" id="type3">
+                <p>Pick a card, any card.</p>
+                </div>
+                <script>
+                    $(document).scroll(function() {
+    if($(document).scrollTop() >= 400 ) {
+        $('.type3 p').addClass('typing');
+    }
+    else {
+        $('.type3 p').removeClass('typing');
+    }
+});
+                </script>
+                <div class="card-group">
+                    <div class="big-card">
+                       <a class="cover-link" href="https://tob-ss.github.io/esports-academy-redesign/"></a>
+                    </div>
+                    <div class="big-card">
+                        
+                    </div>
+                    <div class="big-card">
+                        
+                    </div>
+                    <div class="big-card">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        <script src="app.js"></script>
+    </body>
+</html>
