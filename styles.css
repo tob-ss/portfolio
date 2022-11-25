@@ -145,6 +145,11 @@
     }
 }
 
+@media screen and (max-width: 300px) {
+    #navbar__logo {
+        font-size: 1rem;
+    }
+}
 .main__container {
     display: flex;
     flex-direction: column;
@@ -168,7 +173,7 @@
     white-space: nowrap;
 
     animation:
-        type1 3s steps(22) 2s forwards,
+        type1 1s steps(22) 2s forwards,
         blink 0.5s steps(1) infinite;
     animation-delay: 0ms;
     
@@ -209,9 +214,9 @@
     white-space: nowrap;
 
     animation:
-        type2 3s steps(26) 2s forwards;
+        type2 1s steps(26) 2s forwards;
 
-    animation-delay: 5s;
+    animation-delay: 2s;
 }
 
 @keyframes type2 {
@@ -324,7 +329,7 @@ a.cover-link {
     white-space: nowrap;
 
     animation:
-        type3 3s steps(22) 2s forwards;
+        type3 1s steps(22) 2s forwards;
     animation-play-state: paused;
     
 }
@@ -379,7 +384,7 @@ a.cover-link {
     white-space: nowrap;
 
     animation:
-        type4 3s steps(28) 2s forwards;
+        type4 1s steps(28) 2s forwards;
       
     animation-play-state: paused;
     
@@ -406,6 +411,12 @@ a.cover-link {
     }
 }
 
+@media screen and (max-width: 450px) {
+    .type4 p {
+        font-size: 1em;
+    }
+}
+
 @media screen and (max-width: 380px) {
     .type4 p {
         font-size: 0.75em;
@@ -420,6 +431,20 @@ a.cover-link {
     justify-content: center;
 }
 
+@media screen and (max-width: 450px) {
+    .profile-card {
+        max-width: 250px;
+    }
+   
+}
+
+@media screen and (max-width: 300px) {
+    .profile-card {
+        max-width: 200px;
+    }
+   
+}
+
 .type5 p {
     font-size: 40px;
     display: inline-block;
@@ -431,7 +456,7 @@ a.cover-link {
     white-space: nowrap;
 
     animation:
-        type5 3s steps(28) 2s forwards;
+        type5 1s steps(28) 2s forwards;
       
     animation-play-state: paused;
     
@@ -456,6 +481,12 @@ a.cover-link {
 @media screen and (max-width: 500px) {
     .type5 p {
         font-size: 1.25em;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .type5 p {
+        font-size: 1em;
     }
 }
 
@@ -492,5 +523,11 @@ a.cover-link {
 @media screen and (max-width: 820px) {
     .social__media--wrap {
         flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .social__icons--link {
+        font-size: 50px;
     }
 }
