@@ -153,7 +153,7 @@
 .main__container {
     display: flex;
     flex-direction: column;
-    justify-content: left;
+    justify-content: space-between;
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
@@ -173,7 +173,7 @@
     white-space: nowrap;
 
     animation:
-        type1 1s steps(22) 2s forwards,
+        type1 1.5s steps(22) 2s forwards,
         blink 0.5s steps(1) infinite;
     animation-delay: 0ms;
     
@@ -207,14 +207,14 @@
     display: inline-block;
     letter-spacing: 0.1em;
 
-    padding-top: -100px;
-
+    padding-bottom: 300px;
+    position: relative;
     width: 0;
     overflow: hidden;
     white-space: nowrap;
 
     animation:
-        type2 1s steps(26) 2s forwards;
+        type2 1.5s steps(26) 2s forwards;
 
     animation-delay: 2s;
 }
@@ -329,13 +329,14 @@ a.cover-link {
     white-space: nowrap;
 
     animation:
-        type3 1s steps(22) 2s forwards;
+        type3 2s steps(22) 2s forwards;
     animation-play-state: paused;
     
 }
 
 .type3 p.typing {
     animation-play-state: running;
+    animation-delay: 100ms;
 }
 
 @keyframes type3 {
@@ -384,13 +385,14 @@ a.cover-link {
     white-space: nowrap;
 
     animation:
-        type4 1s steps(28) 2s forwards;
-      
+        type4 2s steps(28) 2s forwards;
+    
     animation-play-state: paused;
     
 }
 
 .type4 p.typing {
+    animation-delay: 80ms;
     animation-play-state: running;
 }
 
@@ -456,7 +458,7 @@ a.cover-link {
     white-space: nowrap;
 
     animation:
-        type5 1s steps(28) 2s forwards;
+        type5 2s steps(28) 2s forwards;
       
     animation-play-state: paused;
     
@@ -464,7 +466,7 @@ a.cover-link {
 
 .type5 p.typing {
     animation-play-state: running;
-    animation-delay: 5s;
+    animation-delay: 2s;
 }
 
 @keyframes type5 {
