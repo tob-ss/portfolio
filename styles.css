@@ -287,8 +287,14 @@ a.cover-link {
 
 
 .big-card:nth-child(2) {
-    
     transform: rotate(2deg);
+    background-image: url("images/eatDiversesmall.png");
+}
+
+@media screen and (max-width: 470px) {
+    .big-card:nth-child(2) {
+        background-image: url("images/eatDiversesmallest.png")
+    }
 }
 
 .big-card:nth-child(3) {
