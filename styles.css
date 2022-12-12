@@ -273,6 +273,12 @@ a.cover-link {
     width: 30vmin;
 }
 
+@media screen and (max-width: 410px) {
+    .card-group {
+        margin-bottom: 200px;
+    }
+}
+
 .big-card:nth-child(1) {
     
     transform: translateX(-10%) rotate(-1deg);
@@ -534,7 +540,7 @@ a.cover-link {
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
     .social__icons--link {
         font-size: 50px;
     }
